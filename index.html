@@ -5,7 +5,7 @@
     <title>Veeam Availability Suite v8</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -30,7 +30,7 @@
             </div>
             <form class="download_section_form" action="#" method="post">
              <fieldset>
-               <legend>Download <br> Veeam Availability Suite v8</legend>
+               <legend id="anchor_download">Download <br> Veeam Availability Suite v8</legend>
                <input type="text" name="user_first_name" placeholder="First Name" required>
                <input type="text" name="user_last_name" placeholder="Last Name" required>
                <input type="email" name="user_email" placeholder="Enter business email"  required>
@@ -56,28 +56,28 @@
               <figcaption>Watch 3-min video: Veeam is defining <br> the Availability for the Modern Data Center</figcaption>
             </figure>
           </a>
-          <p><b>Veeam<sup>®</sup></b> and <b>NetApp</b> offer the right solution to deliver Availability 	for the Modern Data Center<sup>™</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups from NetApp storage snapshots, providing NetApp FAS and FlexArray (V-Series) customers with the ability to create image-based backups as often as needed - even during business hours - with little to no impact on production environments. </p>
-          <a class="link link_text" href="#">Product Overview</a>
-          <a class="link link_text" href="#">Top 10 Reasons to Choose Veeam</a>
+          <div class="wrapper">
+            <p><b>Veeam<sup>®</sup></b> and <b>NetApp</b> offer the right solution to deliver Availability 	for the Modern Data Center<sup>™</sup>. Veeam’s integration with NetApp helps orchestrate Data ONTAP to create application-consistent backups from NetApp storage snapshots, providing NetApp FAS and FlexArray (V-Series) customers with the ability to create image-based backups as often as needed - even during business hours - with little to no impact on production environments. </p>
+            <a class="link sprite_logo_link_text" href="#">Product Overview</a>
+            <a class="link sprite_logo_link_text" href="#">Top 10 Reasons to Choose Veeam</a>
+          </div>
         </div>
       </div>  
     </header>
     <main>
       <div class="features_navigation">
-        <div class="container">
-          <nav>
-            <ul>
-              <li><a href="">Integration</a></li>
-              <li><a href="">Backup</a></li>
-              <li><a href="">Recovery</a></li>
-              <li><a href="">Download Now</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="container">
+          <ul>
+            <li><a href="#anchor_integration">Integration</a></li>
+            <li><a href="#anchor_backup">Backup</a></li>
+            <li><a href="#anchor_recovery">Recovery</a></li>
+            <li class="download_link"><a href="#anchor_download">Download Now</a></li>
+          </ul>
+        </nav>
       </div> 
       <div class="features_integration">
         <div class="container">
-          <h2>Explore the benefits of Veeam integration with NetApp</h2>
+          <h2 id="anchor_integration">Explore the benefits of Veeam integration with NetApp</h2>
           <p>Veeam’s enterprise-level, near-continuous data protection (near-CDP) delivers the best recovery time and point objectives (RTPO<sup>™</sup>) for all applications in VMware vSphere environments. The combination of NetApp’s low RPO capabilities and Veeam’s low RTO enablement allows users to:</p>
           <div class="features_column">
             <ul>
@@ -121,12 +121,12 @@
               <figcaption>Ready for the Cloud</figcaption>
             </figure>
           </a>
-          <a class="link link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
+          <a class="link sprite_logo_link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
         </div>
       </div>
       <div class="features_backup">
         <div class="container">
-          <h2>Perform fast backups from NetApp Storage Snapshots</h2>
+          <h2 id="anchor_backup">Perform fast backups from NetApp Storage Snapshots</h2>
           <div class="text_section">
             <h3>Dramatically improve vSphere backup</h3>
             <a class="preview_image" href="http://img.veeam.com/product_pages/v8/screenshots/220_san_snapshot_hl.png">
@@ -138,8 +138,8 @@
             <p>Taking VMware vSphere snapshots can produce a serious burden on virtual machine (VM) performance, and it can take considerable effort by administrators to overcome this technical challenge and meet the required SLAs.</p>
             <p>Veeam dramatically improves this process, providing built-in integration with your production storage, leveraging storage snapshot functionality to reduce the impact on the environment from vSphere snapshot removal during backup and replication.</p>
             <p>Don’t be stuck with once-a-day backups for I/O intensive workloads—make backups and replicas as often as every 15 minutes!</p>
-            <a class="link link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
-            <a class="link link_video" href="#">Watch video about Veeam solution for HP StoreVirtual VSA</a>
+            <a class="link sprite_logo_link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
+            <a class="link sprite_logo_link_video" href="#">Watch video about Veeam solution for HP StoreVirtual VSA</a>
           </div>
           <div class="text_section">
             <h3>Fast vSphere backups with low RPOs</h3>
@@ -156,7 +156,7 @@
               <li>Speed up the process—back up from storage snapshots up to 20x faster than with competitive solutions</li>
               <li>Dramatically reduce the impact of backup activities on your production environment</li>
             </ul>
-            <a class="link link_blog" href="">Read blog post about Veeam and NetApp</a>
+            <a class="link sprite_logo_link_blog" href="">Read blog post about Veeam and NetApp</a>
           </div>
           <div class="text_section">
             <div class="text_box">
@@ -185,7 +185,7 @@
       </div>
       <div class="features_recovery">
         <div class="container">
-          <h2>Enjoy quick granular recovery for NetApp Storage Snapshots</h2>
+          <h2 id="anchor_recovery">Enjoy quick granular recovery for NetApp Storage Snapshots</h2>
           <div class="text_section">
             <h3>Restore from a storage snapshot in minutes!</h3>
             <a class="preview_image" href="http://img.veeam.com/product_pages/v8/screenshots/san_IR.png">
@@ -201,8 +201,8 @@
               <li>Reduce the time needed to mount snapshots 10 times or more compared to manual processes, lowering your RTOs while avoiding human errors that can occur during critical recovery steps such as mounting snapshots</li>
             </ul>
             <p>With Veeam Explorer for Storage Snapshots, you can take advantage of the low overhead that periodic SAN snapshots offer for low recovery point objectives (RPOs), and let Veeam Backup & Replication<sup>™</sup> automate the whole recovery process for you, bringing you low recovery time objectives (RTOs) as well. You can:</p>
-            <a class="link link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
-            <a class="link link_blog" href="#">Read blog post about Veeam and NetApp</a>
+            <a class="link sprite_logo_link_video" href="http://fast.wistia.net/embed/iframe/w5k601c6f6?popover=true&ad=in-text-link">Watch video on how Veeam integrates with NetApp</a>
+            <a class="link sprite_logo_link_blog" href="#">Read blog post about Veeam and NetApp</a>
           </div>
           <div class="text_section">
             <h3>How it works</h3>
