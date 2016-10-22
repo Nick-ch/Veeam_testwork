@@ -42,14 +42,21 @@ p {
 }
 
 .container {
-  max-width: 910px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.header_top_promo .container,
-.header_download_section .container {
-  max-width: 940px;
+@media (min-width: 640px) and (max-width: 980px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+    max-width: 320px;
+  }
 }
 
 .clearfix::after {
@@ -181,7 +188,7 @@ p {
 }
 
 .download_section {
-  width: 883px;
+  max-width: 883px;
   min-height: 471px;
   
   padding-top: 24px;
@@ -249,6 +256,18 @@ p {
   
   border: 3px solid #3482ca;
   background-color: #1a76cb;
+}
+
+@media (min-width: 640px) and (max-width: 980px) {
+  .download_section_form {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .download_section_form {
+    display: none;
+  }
 }
 
 .download_section_form fieldset {
@@ -612,6 +631,10 @@ main .link_wrap a {
   padding-bottom: 80px;
   
   background-color: #e5e9ee;
+}
+
+.about_text h2 {
+  margin-top: 0;
 }
 
 .about_text p {
