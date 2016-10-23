@@ -490,7 +490,8 @@ img {
 
 @media (min-width: 640px) and (max-width: 980px) {
   .preview_image {
-    
+    display: block; 
+    text-align: center;
   }
 }
 
